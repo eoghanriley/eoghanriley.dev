@@ -3,7 +3,8 @@ title: 'Writing a Pygame Framework Week 0'
 date: 2022-07-17
 draft: false
 type: 'post'
-tags: ['Blog Post', 'Python', 'Pygame', 'Untitled Framework']
+tags:
+  ['Blog Post', 'Project', 'Python', 'Pygame', 'Untitled Framework', 'Game Dev']
 showTableOfContents: true
 weight: 1
 ---
