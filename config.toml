@@ -53,6 +53,12 @@ enableRobotsTXT = true
     # We use feather-icons: https://feathericons.com/
     pre = "<span data-feather='github'></span>"
 
+  [[menu.main]]
+    identifier = "contactMe"
+    name = "Contact Me"
+    weight = 6
+    url = "/contact-me/"
+
 [params]
   description = "The portfolio and blog for Eoghan Riley."
 
