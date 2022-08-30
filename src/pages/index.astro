@@ -1,11 +1,45 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from '@astrojs/image/components';
+import { Icon } from 'astro-icon';
 ---
 
 <Layout title="eoghanriley.dev">
 	<main>
-		
-	</main>
+	  <div class="flex justify-center mt-12">	  
+      <Image src='public/codepfp.png', width=125, height=125 />
+	  </div>
+
+    <div class="flex justify-center mt-2">
+      <h1 class="text-4xl text-slate-50">eriley</h1>
+    </div
+  
+    <div />
+
+    <div class="flex justify-center mt-2">
+      <p class="text-xl text-slate-50">Hi! I'm Eoghan Riley a 15 year old developer that likes to build cool things especially on the web.</p>
+    </div>
+
+    <div class="flex justify-center mt-2 mx-2">
+      <a href="https://www.github.com/eoghanriley" class="mx-2">
+        <Icon name='akar-icons:github-outline-fill' size=40 />
+      </a>
+      
+      <a href="https://www.linkedin.com/in/eoghan-riley-ba1529245/" class="mx-2">
+        <Icon name='ant-design:linkedin-outlined' size=40 />
+      </a>
+
+      <a href="mailto:eoghan.riley@gmail.com" class="mx-2">
+        <Icon name='ci:mail' size=40 />
+      </a>
+
+
+      <a href="https://twitter.com/Seniorquesopan1" class="mx-2">
+        <Icon name='iconoir:twitter' size=40 />
+      </a>
+
+    </div>
+  </main>
 </Layout>
 
 <style>
