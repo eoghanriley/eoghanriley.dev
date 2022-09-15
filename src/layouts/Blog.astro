@@ -1,0 +1,34 @@
+---
+export interface Props {
+	title: string;
+	description: string;
+	date: string;
+  categories: [];
+  length?: string;
+}
+
+const { frontmatter } = Astro.props;
+
+import Header from '../components/Header.astro';
+import '../app.css';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{Astro.props.frontmatter.title} | eoghanriley.dev</title>
+  </head>
+	<body class="bg-gray-700 text-slate-50">
+		<Header />
+      <main class="flex py-12 justify-center px-3">
+        <article class="prose text-slate-50 overflow-clip">  
+          <h1 class="text-slate-50 text-6xl">{frontmatter.title}</h1>
+          <slot />
+        </article> 
+      </main>
+  </body>
+</html>
