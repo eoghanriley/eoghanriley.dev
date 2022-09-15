@@ -1,5 +1,5 @@
 ---
-layout: @layouts/Blog.astro
+layout: ../../../layouts/Blog.astro
 title: 'test'
 date: 2022-8-9
 description: 'test blog post'
